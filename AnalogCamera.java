@@ -1,3 +1,5 @@
-public class AnalogCamera implements Cameras {
-  
+public class AnalogCamera implements Printable {
+  public String printDetails() {
+    return "details";
+  }
 }

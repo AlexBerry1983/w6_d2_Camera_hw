@@ -1,3 +1,5 @@
-public class DigitalCamera implements Cameras {
-  
+public class DigitalCamera implements Printable {
+  public String printDetails () {
+    return "details";
+  } 
 }

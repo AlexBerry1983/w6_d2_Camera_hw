@@ -5,8 +5,6 @@ import org.junit.*;
 public class PhotographerTest {
     Photographer photographer;
     Camera camera;
-    DigitalCamera digitalCamera;
-    AnalogCamera analogCamera;
 
   @Before
   public void before() {
@@ -38,5 +36,10 @@ public class PhotographerTest {
     photographer.removeCamera();
     assertEquals(2, photographer.cameraCount());
   }
+  
+  // @Test
+  // public void canPrintDetails() {
+  //   assertEquals("details", printable.printDetails());
+  // }
 
 }
