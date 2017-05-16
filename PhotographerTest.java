@@ -15,6 +15,9 @@ public class PhotographerTest {
     assertNotNull(photographer);
   }
 
-  
+  @Test
+  public void cameraArrayStartsEmpty() {
+    assertEquals(0, photographer.cameraCount());
+  }
 
 }
