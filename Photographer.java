@@ -16,4 +16,12 @@ public class Photographer {
     cameraArray.add(camera);
   }
 
+  public Cameras removeCamera() {
+    if (cameraCount() > 0) {
+      return cameraArray.remove(0);
+    }
+    return null;
+  }
+
+
 }
