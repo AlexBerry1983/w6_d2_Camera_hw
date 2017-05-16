@@ -4,10 +4,12 @@ import org.junit.*;
 
 public class PhotographerTest {
     Photographer photographer;
+    Camera camera;
 
   @Before
   public void before() {
     photographer = new Photographer();
+    camera = new Camera();
   }  
 
   @Test
@@ -18,6 +20,12 @@ public class PhotographerTest {
   @Test
   public void cameraArrayStartsEmpty() {
     assertEquals(0, photographer.cameraCount());
+  }
+
+  @Test
+  public void canAddCamera() {
+    photographer.addCamera(camera);
+    assertEquals(1, photographer.cameraCount());
   }
 
 }

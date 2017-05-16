@@ -12,4 +12,8 @@ public class Photographer {
     return cameraArray.size();
   }
 
+  public void addCamera(Cameras camera) {
+    cameraArray.add(camera);
+  }
+
 }
